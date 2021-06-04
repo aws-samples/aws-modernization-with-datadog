@@ -1,17 +1,40 @@
-## My Project
 
-TODO: Fill this README out!
 
-Be sure to:
+# Datadog workshop 
 
-* Change the title in this README
-* Edit your repository description on GitHub
+This workshop covers how to migrate a simple application from running on EC2 to running in a Kubernetes cluster on AWS, as well as monitoring the application using [Datadog](http://datadoghq.com/).
+Topics covered include:
+* Getting started with Kubernetes
+* Deploying Kubernetes to AWS
+* Using Helm to install the Datadog agent
+* Monitoring Kubernetes with Datadog
+* Monitoring a workload on Kubernetes with Datadog
 
-## Security
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+## Building the Website
 
-## License
+This page is built with Hugo, so you'll need it [installed](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo)
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+First, clone this repo:
 
+```bash
+git clone git@github.com:mmaall/aws-datadog-workshop.git 
+```
+Ensure you've also cloned the submodules:
+
+```bash
+git submodule init
+git submodule update
+```
+
+Then server the website with hugo:
+
+```bash
+hugo server
+
+```
+
+### Learning Objectives
+- Basics of running Kubernetes on EC2
+- How to use Helm to install Datadog Agent
+- Monitoring Kubernetes with Datadog 
