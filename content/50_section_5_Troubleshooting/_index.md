@@ -4,7 +4,7 @@ chapter: true
 weight: 40
 ---
 
-# Section 1 Deploy to Kubernetes
+# Troubleshooting
 
 ### Welcome
 
