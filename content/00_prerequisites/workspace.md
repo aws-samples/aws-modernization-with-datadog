@@ -32,6 +32,8 @@ Make sure you are naming your Cloud9 environment `Datadog-Workshop`, otherwise t
 
 - Select **Create environment**
 - Name it **Datadog-Workshop**. On the next page, expand **Network Settings (advanced)** and click the dropdown for subnet. You have four choices here but it defaults to the one that won't work. choose any subnet other than **Default in us-west-2d**.  All the other defaults will work well.
+![c9networksetting](/images/c9networksetting.png)
+
 - When it comes up, customize the environment by closing the **welcome tab**
 and **lower work area**, and opening a new **terminal** tab in the main work area:
 ![c9before](/images/c9before.png)
