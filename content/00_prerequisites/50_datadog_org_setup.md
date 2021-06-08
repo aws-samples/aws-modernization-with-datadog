@@ -28,10 +28,16 @@ We recommend that you create a new Datadog organization for this workshop. While
     8.  Configures the configuration file for the cluster based on the unique S3 bucket name. S3 bucket names have a single global namespace so no two buckets can have the same name.
     9.  Use Kops to create the cluster. This will create two t3.medium instances in the account. If you are running this in your personal account, these instances will charge against your account. 
     10. Add a secret to the cluster, update it, and add login information to ~/.bashrc.
-11. Close the current terminal by clicking the **x** in the tab and then create a new terminal by clicking the + sign where the tab was. 
+    11. Set up the EC2 environment
+11. Close the current terminal by clicking the **x** in the tab and then create a new terminal by clicking the **+** sign where the tab was. 
+12. Change directory in the new terminal to ~/environment/section1, then run `terraform output`.
+13. Copy the SSH commands and add them to your notes.
+14. Run the command shown next to SSH to Frontend above
+15. Change directory to **/app**. If the directory is not there yet, wait a few seconds and try again.
+16. Run `bundle exec puma --config config/puma.rb`, then create another terminal by clicking the **+** sign again. If you get an error when running puma that says there is a missing gem, wait for the message that says 'all done' and try again.
 
 If you are not running this with the AWS provided credentials and instead using your personal account, there is a **cleanup.sh** script under **~/sourcefiles/cleanup/this will delete everything/**. Only run this when you are done with the workshop. As the folder is titled, this script will delete everything created in the setup script.
 
-If you just want to remove the cluster and the instances it runs on, run `kops delete cluster --name="$KOPSNAME" --state="$KOPS_STATE_STORE"`
+If you just want to remove the cluster and the instances it runs on, run `kops delete cluster --name="$KOPSNAME" --state="$KOPS_STATE_STORE"`. To delete the EC2 instances you can run `terraform destroy -auto-approve` in the section1 directory.
 
 Now you can move on to Section 1 of the workshop

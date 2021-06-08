@@ -1,17 +1,16 @@
 ---
-title: "Deploy to EC2"
+title: "Use and Monitor the App on EC2"
 chapter: true
 weight: 20
 ---
 
-# Deploy to EC2
+# Use and Monitor the App on EC2
 
 
 ### Learning Objectives
 
-- Learn the basics of Terraform
-- Deploy our application to EC2 with Terraform
 - Get familiar with our example application
+- Learn about some of the features of Datadog
 
 
 {{% notice warning %}}

@@ -8,7 +8,7 @@ In the previous section we used **kubectl** to dig in to our Kubernetes cluster.
 
 1.  Using the login information you collected during the prerequisites section, login to Datadog at **https://app.datadoghq.com**.
 2.  Navigate to the Infrastructure > Containers view. ![containers view.png](/images/dd-containers-view.png) From this page you can see memory vs CPU of all the containers across your Kubernetes clusters and Docker on all platforms.
-3.  Click on any of the containers to see a small dashboard of that particular container.
+3.  Click on one of the two containers for etcd-manager to see a small dashboard of that particular container.
 4.  Next look at the logs for that container. If you don't see anything, change the time period from Live Tail, which will show logs as they come in to Past 12 Hours. We don't have APM enabled so nothing will show up there.
 5.  Click the X at the top right and then change the **Resource** at the top left from **Containers** to **Pods**. Now we see a list of all the **Pods** that are being monitored right now. 
 6.  Click on any of them and you will see the YAML that describes that pod. This is not the YAML file that started the pod, but rather the current representation of it.
