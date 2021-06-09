@@ -1,5 +1,5 @@
 +++
-title = "2.2.6 Verify that the application works"
+title = "2.2.5 Verify that the application works"
 chapter = false
 weight = 50
 +++

@@ -1,5 +1,5 @@
 +++
-title = "1.1.2 Using the Application"
+title = "1.1.2 Monitoring the Application"
 chapter = false
 weight = 20
 +++
