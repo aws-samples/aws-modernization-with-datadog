@@ -12,7 +12,7 @@ We recommend that you create a new Datadog organization for this workshop. While
 2. You will see a login prompt. Enter your email address and click submit. ![login](/images/dd-login-screen.png). 
 3. Within a few seconds you will receive an email to that account with a verification code. ![email](/images/dd-email-verify.png).
 4. Go back to your browser and enter that code ![verified](/images/dd-verified.png)
-5. Click on the link on the section on the left for the **Snippet Labs**.![choose snippet](/images/dd-choose-snippet.png)
+5. Click on the link on the section on the left for the **Snippet Lessons**.![choose snippet](/images/dd-choose-snippet.png)
 6. Choose any of the labs. We just want to access the account that it creates so the content doesn't matter. Click the Start Scenario button and wait for the scenario to start.
 7. When the environment is started you will see something like this. Take note of the username and password. You are going to need it later. ![username password](/images/dd-usernamepassword.png).
 8. In the terminal on labs.datadoghq.com, run the command: `env | sed -n '/DD_/s/.*/export &/p'`. You should see something like this: ![export api key](/images/dd-export-api-key.png)
@@ -32,7 +32,7 @@ We recommend that you create a new Datadog organization for this workshop. While
 11. Close the current terminal by clicking the **x** in the tab and then create a new terminal by clicking the **+** sign where the tab was. 
 12. Change directory in the new terminal to ~/environment/section1, then run `terraform output`.
 13. Copy the SSH commands and add them to your notes.
-14. Run the command shown next to SSH to Frontend above
+14. Run the command shown next to **ssh_to_frontend** above
 15. Change directory to **/app**. If the directory is not there yet, wait a few seconds and try again.
 16. Run `bundle exec puma --config config/puma.rb`, then create another terminal by clicking the **+** sign again. If you get an error when running puma that says there is a missing gem, wait for the message that says 'all done' and try again.
 

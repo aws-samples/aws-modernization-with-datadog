@@ -1,5 +1,5 @@
 +++
-title = "2.2.7 Using Kubernetes"
+title = "2.2.6 Using Kubernetes"
 chapter = false
 weight = 60
 +++

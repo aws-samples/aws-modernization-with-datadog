@@ -1,5 +1,5 @@
 +++
-title = "4.2.4 Implementing Synthetics"
+title = "4.2.3 Implementing Synthetics"
 chapter = false
 weight = 40
 +++
